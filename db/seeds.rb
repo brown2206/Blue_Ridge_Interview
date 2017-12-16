@@ -4,4 +4,6 @@ require 'csv'
 
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'interview_sample_data_01.csv'))
 csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
-puts csv_text
+csv.each do |row|
+  puts row.to_hash
+end
