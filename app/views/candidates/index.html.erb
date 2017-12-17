@@ -1,9 +1,15 @@
 <h1>All Candidates</h1>
 
-<ul>
+<div>
   <% @candidates.each do |candidate| %>
-    <li>
+    <div>
+        <%= candidate.id %>
         <%= candidate.first_name %>
-    </li>
+        <%= candidate.last_name %>
+        <%= candidate.email %>
+        <%= candidate.gender %>
+        <%= candidate.ip_address %>
+        <%= candidate.date_of_birth %>
+    </div>
   <% end %>
-</ul>
+</div>
