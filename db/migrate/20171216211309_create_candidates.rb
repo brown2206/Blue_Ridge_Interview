@@ -6,7 +6,7 @@ class CreateCandidates < ActiveRecord::Migration[5.0]
       t.string :email
       t.string :gender
       t.string :ip_address
-      t.date :date_of_birth
+      t.string :date_of_birth
     end
   end
 end

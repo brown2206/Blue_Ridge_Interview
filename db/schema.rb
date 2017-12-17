@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20171216211309) do
     t.string "email"
     t.string "gender"
     t.string "ip_address"
-    t.date   "date_of_birth"
+    t.string "date_of_birth"
   end
 
 end
