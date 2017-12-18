@@ -16,6 +16,8 @@ gem 'pg', '~> 0.18.2'
 gem 'react-rails'
 # Use devise to implement user authentication
 gem 'devise'
+# Use bootstrap
+gem 'bootstrap-sass'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
