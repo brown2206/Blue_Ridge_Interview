@@ -2,7 +2,7 @@ var Header = createReactClass({
 
   render: function() {
     return (
-        <h1>All Candidates</h1>
+        <h1>Hello World!</h1>
     );
   }
 });

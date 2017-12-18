@@ -14,6 +14,7 @@
 
     <p>Hello, <%= current_user.name %> - <%= link_to "Sign_out", destroy_user_session_path, :method => 'delete' %></p>
     <%= link_to "Enter New Candidate", new_candidate_path %>
+    <%= link_to "All Candidates", candidates_path %>
 
     <br>
 

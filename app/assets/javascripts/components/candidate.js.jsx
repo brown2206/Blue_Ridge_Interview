@@ -1,4 +1,7 @@
 var Candidate = createReactClass({
+  handleDelete(id) {
+    this.props.handleDelete(id);
+  },
 
   render: function() {
     return (
@@ -10,6 +13,8 @@ var Candidate = createReactClass({
       <p><b>GENDER:</b> {this.props.candidate.gender}</p>
       <p><b>IP ADDRESS:</b> {this.props.candidate.ip_address}</p>
       <p><b>DOB:</b> {this.props.candidate.date_of_birth}</p>
+      <a href={"/candidates/" + this.props.candidate.id + "/edit"}>Edit Candidate</a>
+      <button onClick={this.handleDelete.bind(this, this.props.candidate.id)} >Delete</button>
     </div>
     );
   }
