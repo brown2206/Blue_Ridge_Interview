@@ -1,4 +1,4 @@
-<div>  
+<div>
 <%= form_for @candidate do |f| %>
   <p>
   <%= f.label :first_name, 'FIRST NAME' %>
@@ -21,9 +21,10 @@
   <%= f.label :ip_address, 'IP ADDRESS' %>
   <%= f.text_field :ip_address %>
   </p>
-  <!-- <p>
-  <%= f.text_field :date_of_birth, "data-provide" => 'datepicker' %>
-  </p> -->
+  <p>
+  <%= f.label :date_of_birth, 'DATE OF BIRTH' %>
+  <%= f.text_field :date_of_birth, :placeholder => 'M/D/YYYY' %>
+  </p>
   <%= f.submit %>
 <% end %>
 </div>
