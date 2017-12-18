@@ -2,34 +2,30 @@
 
 ## Programming Interview Project 1
 
-At Blue Ridge Dynamics, Inc. we aim to have a detailed interview process that ensures both the
-candidate and BRD work well together. Part of the process includes a standard interview
-session with team members. In addition, we like to assess your ability to work independently on
-projects. One way to evaluate this is to allow you to work on a small project before coming into
-the interview. This allows you to demonstrate your abilities and facilitates discussion points
-during the interview. During the interview session, you will be expected to discuss your project
-with other team members.
+Hello, thank you for reviewing the code to my "Interview" app.  The Story originally required the use of a Python based Flask backend rest service, however, after careful research, I decided to use Rails as my backend service, based on my familiarity with this technology stack and my desire to deliver an excellent product in a short window of time.  In this GitHub, you will see two branches (master, Angelo_React).  When I initially started this project, I created a full CRUD application that did not render views in React.  I did this on purpose in order to test the functionality of the app.  I did however use React to render views on a different branch, "Angelo_React".  For the purposes of satisfying the Acceptance Criteria of this story, please run the app from the "Angelo_React" branch.  I was able to research and discover several ruby gems to help me complete the bonus portion, however, due to time constraints, I was not able to complete the bonus portion.  In summary, all three points in the acceptance criteria have been met.  Please see instructions below.
 
-Description
+## Instructions for running "Interview" on the Angelo_React branch.
 
-Implement a multi-user web based application using HTML5, Reactjs and a Python based Flask
-backend rest service to view and analyze personal demographic data provided in the
-interview_sample_data_01.csv. This web application should contain the following pages:
 
-1. A Login page that authenticates the user via the rest service.
-2. Allow two users access to the application with usernames tom and harry, both using the
-password “password”.
-3. A data centric view to display the provided data set using a Table that is provided via the
-rest service.
+1. This app uses a PostgreSQL database.  If you do not already have PostgreSQL, please download.
+2. Clone this repo and navigate into the folder.
+3. Run the following rails commands:
+    rails db:drop
+    rails db:create
+    rails db:migrate
+    rails db:seed
+4. Start your server by running "rails s".
+5. Navigate to http://localhost:3000/users/sign_in
+6. To sign in as Tom use:
+    Name: Tom
+    Email: tom@blueridgedynamics.com
+    Password: 123456
 
-Feel free to use another technology stack if it makes sense, and provide a short justification on
-your decision.
+    To sign in as Harry use:
+    Name: Harry
+    Email: harry@blueridgedynamics.com
+    Password: 123456
+7.  Once you've signed up, you're automatically logged into the app!  Have fun using this app!  I had an awesome time building it!!!
 
-Please submit your project by creating a github project and sharing the repo via email.
-Please include instructions on how to run your application in a readme.md file.
-
-( Optionally) Bonus Points
-1. Filter rows based on age, gender or other columns
-2. Display 2 pie charts that display the age and gender columns.
-3. Display a histogram of the ages column.
-4. Dockerize the project.
+Angelo Brown
+12/18/17
