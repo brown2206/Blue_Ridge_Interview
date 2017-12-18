@@ -18,7 +18,7 @@ class Candidates extends React.Component {
         return(
           <tbody>
             <tr key={x.id}>
-              <td>{x.id}</td>
+              <td><a href={"/candidates/"+ x.id}>{x.id}</a></td>
               <td>{x.first_name}</td>
               <td>{x.last_name}</td>
               <td>{x.email}</td>
