@@ -17,13 +17,18 @@
 @import "bootstrap";
 
 th {
-  padding: 13px;
+  padding: 10px;
 }
 
 td {
-  padding-left: 13px;
+  padding-left: 10px;
 }
 
 p {
   margin-left: 20px;
+}
+
+#page-wrap {
+  width: 1000px;
+  margin: 0 auto;
 }

@@ -1,7 +1,7 @@
 class Candidates extends React.Component {
   render () {
     return (
-      <div>
+      <div id="page-wrap">
         <thead>
           <tr>
             <th>ID </th>
