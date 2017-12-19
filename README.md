@@ -16,12 +16,12 @@ Hello, thank you for reviewing the code to my "Interview" app.  The Story origin
     rails db:seed
 4. Start your server by running "rails s".
 5. Navigate to http://localhost:3000/users/sign_in
-6. To sign in as Tom use:
+6. To sign-up as Tom use:
     Name: Tom
     Email: tom@blueridgedynamics.com
     Password: 123456
 
-    To sign in as Harry use:
+    To sign-up as Harry use:
     Name: Harry
     Email: harry@blueridgedynamics.com
     Password: 123456
