@@ -16,3 +16,4 @@ csv.each do |row|
     model.date_of_birth = row[6]
   end
 end
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
