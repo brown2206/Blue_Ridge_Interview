@@ -1,9 +1,9 @@
-class SessionsController < Devise::SessionsController
-
-  private
-
-  def sign_in_params
-    params.require(:user).permit(:name, :email, :password, :remember_me)
-  end
-
-end
+# class SessionsController < Devise::SessionsController
+#
+#   private
+#
+#   def sign_in_params
+#     params.require(:admin_user).permit(:email, :password)
+#   end
+#
+# end
